@@ -1,0 +1,33 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main(){
+int n=0;
+cout<<"the number of string"<<endl;
+cin>>n;
+vector<string> str(n);
+for(int i=0;i<n;i++)
+{
+cin>>str[i];
+}
+for(int i=0;i<n;i++)
+{
+string rev=str[i];
+reverse(rev.begin(),rev.end());
+  if(rev==str[i])
+
+{
+cout<<"string"<<" "<<str[i]<<"="<<rev<<endl;
+cout<<"the given string is the palindrome"<<endl;
+}
+else{
+cout<<"string"<<" "<<str[i]<<"!="<<rev<<endl;
+cout<<"not the palindrome"<<endl;
+}
+}
+return 0;
+
+}
+
