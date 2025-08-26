@@ -1,0 +1,91 @@
+#include<iostream>
+using namespace std;
+int calculatesum(int a,int b)
+{
+ int  result=a+b;
+ return result;
+}
+int calculatesub(int a,int b)
+{
+ int  result=a-b;
+ return result;
+}
+int squareofsum(int a,int b)
+{
+ int  result=(a+b)*(a+b);
+ return result;
+}
+int average(int a,int b)
+{int  result=(a+b)/2;
+ return result;
+}
+
+void minimum(int a,int b)
+{int result;
+if(a<b)
+{
+ result=a;
+ cout<<" minimum output:"<<result<<endl;
+ cout<<"true"<<endl;
+}
+else if(a>b)
+{
+  result=b;
+  cout<<" minimum output:"<<result<<endl;
+  cout<<"true"<<endl;
+}
+else
+{
+cout<<"the given two values are same"<<endl;
+cout<<"not able to find the minimum value give the valid inputs"<<endl;
+cout<<"false";
+}
+}
+int main()
+{
+int a;
+int b;
+int n;
+int o;
+cout<<"enter the no of functions in this:"<<endl;
+cin>>n;
+for(int i=0;i<n;i++)
+{
+cout<<"enter the two input values:  "<<endl;
+cin>>a;
+cin>>b;
+cout<<"to enter the operations:"<<endl<<"1 .Square"<<endl<<"2 .Sum"<<endl<<"3 .Subtract"<<endl<<"4 .Average"<<endl<<"5 .Minimum"<<endl<<"6.print all of them"<<endl;
+cout<<"option:";
+cin>> o;
+switch(o)
+{
+case 1:
+cout<<"square of two variables (a+b)*(a+b):"<<squareofsum(a,b)<<endl;
+break;
+case 2:
+cout<<"sum of two variables a+b:"<<calculatesum(a,b)<<endl;
+break;
+case 3:
+cout<<"subtract of two variables a-b:"<<calculatesub(a,b)<<endl;
+break;
+case 4:
+cout<<"average of two variables a+b/2:"<<average(a,b)<<endl;
+break;
+case 5:
+ minimum(a,b);
+break;
+case 6:
+cout<<"square of two variables (a+b)*(a+b):"<<squareofsum(a,b)<<endl;
+cout<<"sum of two variables a+b:"<<calculatesum(a,b)<<endl;
+cout<<"subtract of two variables a-b:"<<calculatesub(a,b)<<endl;
+cout<<"average of two variables a+b/2:"<<average(a,b)<<endl;
+minimum(a,b);
+break;
+default :
+ cout<<" give the valid operations "<<endl;
+ break;
+}
+
+}
+return 0;
+}
