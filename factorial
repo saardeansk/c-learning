@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter how many numbers: ";
+    cin >> n;
+
+    for (int j = 0; j < n; j++) {
+        int num;
+        cout << "Enter number " << j + 1 << ": ";
+        cin >> num;
+
+        int fact = 1;
+        for (int i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+
+        cout << "Factorial of " << num << " = " << fact << endl;
+    }
+
+    return 0;
+}
