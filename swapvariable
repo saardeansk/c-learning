@@ -1,3 +1,17 @@
+             swaping logic
+a=5,b=10
+ 0101
+ 1010
+ 1111
+a=15
+  1111
+  1010
+  0101
+b=5
+  1111
+  0101
+  1010
+a=10
 #include<iostream>
 #include<bits\stdc++.h>
 using namespace std;
