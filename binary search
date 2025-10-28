@@ -5,7 +5,7 @@ int main (){
 int n=0;
 int mid=0;
 int index=-1;
-cout<<"the size of an array"<<endl;
+cout<<"the size of an  array"<<endl;
 cin>>n;
 vector <int> arr(n);
 cout<<"enter the  sorted  elements of array"<<endl;
